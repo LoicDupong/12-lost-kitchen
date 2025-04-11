@@ -18,8 +18,8 @@
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/ton-utilisateur/ton-projet.git
-cd ton-projet
+git clone https://github.com/LoicDupong/12-lost-kitchen.git
+cd 12-lost-kitchen
 npm install
 ```
 
@@ -69,4 +69,4 @@ Ce projet est sous licence [MIT](LICENSE).
 
 ## 📬 Contact
 
-Créé avec ❤️ par [@ton-utilisateur](https://github.com/ton-utilisateur)
+Créé avec ❤️ par [@LoicDupong](https://github.com/LoicDupong)
