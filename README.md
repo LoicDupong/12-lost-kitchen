@@ -1,6 +1,8 @@
-# 🚀 Nom du Projet
+# 🚀 Exo CSS 12 | The Lost Kitchen
 
-> 🌟 Une courte phrase d'accroche pour présenter ton projet.
+> 🌟 Exercice multi-page HTML CSS SCSS - Formation Fullstack JS  
+> Exercice basé sur le site [The Lost Kitchen](https://thelostkitchen.com/)  
+> Repo GitHub : https://github.com/LoicDupong/12-lost-kitchen.git
 
 ---
 
@@ -8,10 +10,10 @@
 
 | ✅ Fait | 🔧 En cours | 📝 À faire |
 |--------|-------------|------------|
-| Fonctionnalité 1 |  |  |
-| Fonctionnalité 2 |  |  |
-|  | Fonctionnalité 3 |  |
-|  |  | Fonctionnalité 4 |
+| Structure HTML multi-pages |  |  |
+| Mise en page CSS |  |  |
+| Intégration SCSS |  |  |
+| Responsive design |  |  |
 
 ---
 
@@ -20,34 +22,26 @@
 ```bash
 git clone https://github.com/LoicDupong/12-lost-kitchen.git
 cd 12-lost-kitchen
-npm install
 ```
 
 ---
 
 ## ▶️ Utilisation
 
-```bash
-npm start
-```
+Ouvrir `index.html` dans le navigateur.
 
 ---
 
 ## ⚙️ Configuration
 
-| Variable          | Description                 | Exemple                |
-|------------------|-----------------------------|------------------------|
-| `API_KEY`         | Clé pour l'API externe      | `123abc456`            |
-| `NODE_ENV`        | Mode d'exécution            | `development` / `prod` |
+Aucune configuration requise.
 
 ---
 
 ## 🧰 Stack Technique
 
-- 🧠 Framework : React / Vue / etc.
-- 🔌 Backend : Node.js / Django / etc.
-- 🗃️ BDD : MongoDB / PostgreSQL
-- 🎨 UI : Tailwind / Bootstrap
+- 🧱 HTML5
+- 🎨 CSS3 / SCSS
 
 ---
 
@@ -63,7 +57,7 @@ npm start
 
 ## 📝 Licence
 
-Ce projet est sous licence [MIT](LICENSE).
+Ce projet est à usage pédagogique uniquement.
 
 ---
 
