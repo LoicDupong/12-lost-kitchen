@@ -1,0 +1,307 @@
+body{
+    background-color: #f8f6f3;
+}
+
+section{
+    margin: 2rem 0 4rem 0;
+}
+
+.container{
+    margin: 2rem 1rem 4rem;
+}
+
+.btn{
+    flex-shrink: 2;
+    transition: .3s all ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(161, 158, 153, 0.5);
+    translate: -250% 0;
+    transition: .3s all ease-in-out;
+    z-index: 3;
+}
+
+.btn:hover::before{
+    translate: 0 0;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.news > a{
+    position: relative;
+}
+
+.news img{
+    height: 360px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.news a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 3;
+}
+
+.news-text{
+    position: absolute;
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    color: white;
+    z-index: 4;
+}
+
+
+.cta{
+    background-color: #ebebe7;
+    padding: 1rem;
+}
+
+.cta-wrapper{
+    border: 1px solid black;
+    padding: 1.8rem;
+}
+
+.cta-text{
+    width: 90%;
+    padding-top: 48px;
+}
+
+.cta-description h3{
+    margin-bottom: 1rem;
+}
+
+.cta-link{
+    margin-top: 2rem
+}
+
+
+
+
+.section-links{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.arrows{
+    display: none;
+}
+
+.cards-wrapper{
+    overflow-x: scroll;
+}
+
+.cards{
+    width: 190%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+
+.card{
+    position: relative;
+}
+
+.card-infos{
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.card-img{
+    position: relative;
+}
+
+.card-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 50%, rgba(0,0,0,0.6) 100%);
+}
+
+
+
+.grid-wrapper{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+}
+
+
+.hero-secondary video{
+    height: 50vh;
+}
+
+.cta-newsletter{
+    background-color: #dddedb;
+    text-align: center;
+}
+
+.cta-body{
+    padding: 25% 1rem;
+}
+.cta-newsletter-text h2{
+    margin-bottom: 1rem;
+}
+
+.cta-newsletter-text{
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+ form input, form button, .btn{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #c9c5be;
+}
+
+form button, .btn{
+    background-color: #c9c5be;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.instagram-wrapper{
+    margin-top: 1rem;
+}
+
+.separator{
+    height: 1px;
+    background: black;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (min-width: 960px) {
+
+    .container{
+        width: 1300px;
+        margin-inline: auto;
+    }
+
+    .section-title{
+        margin-bottom: 1rem;
+    }
+
+    .news{
+        flex-direction: row;
+    }
+    
+    .news img {
+        height: 660px;
+    }
+    
+    .news > *{
+        flex-basis: 50%;
+    }
+
+    .cta-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .cta-title h2 br{
+        display: none;
+    }
+
+    .cta-title{
+        flex-basis: 30%;
+    }
+
+    .cta-text {
+        width: unset;
+        padding-top: 0;
+        flex-basis: 40%;
+    }
+
+    .arrows{
+        display: flex;
+        gap: 1rem;
+        font-size: 26px;
+    }
+
+    .cards{
+        width: 100%;
+    }
+
+    .cards-wrapper{
+        overflow-x: unset;
+    }
+
+    .collection img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cta-newsletter{
+        background-image: url(../img/Newsletter_G3.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 45vh;
+    }
+
+    .cta-newsletter h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta-body{
+        width: 25%;
+        padding: 0;
+    }
+
+    .signup{
+        flex-direction: row;
+        width: 100%;
+        gap: 1rem;
+    }
+
+}

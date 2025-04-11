@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2,h3,h4{
+    font-size: 1.659rem;
+}
+
+p{
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+
+.suptitle, .subtitle, .link{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+.suptitle{
+    font-size: 0.6rem;
+}
+
+.link{
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.link::before{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.hero-body .link::before{
+    background-color: white;
+}
+
+.news-text .title{
+    font-size: 1.9rem;
+}
+
+.news-text p{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.cta-title h2{
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+
+.card-title, .card-details-title{
+    font-family: "Cormorant Garamond", serif;
+}
+
+
+.cta-newsletter h2{
+    font-size: 1.936rem;
+}
+
+.instagram-text *{
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-size: 1.289rem;
+}
+
+.footer-nav{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.italic{
+    font-style: italic;
+}
+.footer-newsletter p, .footer-newsletter span{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.sub-footer *{
+    color: rgba(35, 35, 35, 0.7);
+}
+
+.sub-footer a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.menu{
+    text-transform: uppercase;
+}
+
+
+
+
+@media screen and (min-width: 960px) {
+    h1{
+        font-size: 3.2rem;
+    }
+    
+    h2,h3,h4{
+        font-size: 2rem;
+    }
+
+    p{
+        line-height: 2rem;
+    }
+
+    .suptitle{
+        font-size: 0.8rem;
+    }
+
+    .link{
+        font-size: 1rem;
+    }
+
+    .news-text .title {
+        font-size: 2.3rem;
+    }
+
+    .news-text p {
+        font-size: 1.5rem;
+    }
+
+    .cta-title h2 {
+        font-size: 3.8rem;
+    }
+
+    .footer-menu-title{
+        font-family: "Cormorant Garamond", serif;
+        font-size: 0.8rem;
+    }
+    .desktop-footer-menu a{
+        font-size: 1rem;
+    }
+}

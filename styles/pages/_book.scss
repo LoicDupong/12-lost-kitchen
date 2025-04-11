@@ -1,0 +1,161 @@
+.book-single-header{
+    margin: 0;
+}
+
+.book-single-main{
+    padding-top: 5%;
+}
+
+.book-single-main .separator{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #d3d3d3;
+}
+
+.product-carousel{
+    overflow-x: scroll;
+}
+
+
+.carousel-wrapper{
+    width: 580vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+}
+
+.product-img{
+   height: 80vh;
+}
+
+.product-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.product-title h1{
+    margin: 15% 0 .5rem;
+    font-size: 1.75rem;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #d3d3d3;
+    width: max-content;
+    padding: .5rem 1rem;
+}
+
+.product-btn-add{
+    margin: 2rem 0;
+}
+
+.product-extras{
+    display: flex;
+    justify-content: space-between;
+}
+.product-extras-img{
+    width: 60px;
+}
+
+.product-extra-details{
+    flex-basis: 60%;
+}
+
+.details-btn{
+    padding: 1rem;
+    background-color: #c9c5be;
+    align-self: flex-start;
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.product-share{
+    margin: 2rem 0;
+}
+
+summary{
+    margin-bottom: 1rem;
+}
+
+details span{
+    line-height: 1.5rem;
+    font-size: .95rem;
+}
+.space{
+    margin: 1.5rem 0;
+}
+.notice{
+    margin-top: 2rem;
+}
+
+.wrapper-suggestions{
+    padding-top: 3rem;
+}
+
+.wrapper-suggestions .title{
+    margin-bottom: 2rem;
+}
+
+.wrapper-suggestions .card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    position: relative;
+}
+
+.img-hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+
+.card-img:hover .img-hover{
+    opacity: 1;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    gap: .5rem;
+}
+
+.card-details-price{
+    justify-self: end;
+}
+
+
+
+@media screen and (min-width: 960px){
+    .product-carousel{
+        overflow-x: hidden;
+    }
+    .carousel-wrapper{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper-product{
+        display: flex;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .wrapper-aside{
+        position: sticky;
+        top: 15%;
+        align-self: start;
+        height: fit-content;
+    }
+}

@@ -1,0 +1,25 @@
+.has-dropdown{
+    position: relative;
+}
+
+.dropdown-nav{
+    display: none;
+    position: absolute;
+    left: 0;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: #f8f6f3;
+    width: max-content;
+    border: 1px solid black;
+}
+
+.has-dropdown:hover .dropdown-nav{
+    display: flex;
+    gap: 1rem;
+}
+
+.has-dropdown:hover
+
+.dropdown-nav a:hover{
+    text-decoration: underline;
+}

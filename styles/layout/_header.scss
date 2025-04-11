@@ -1,0 +1,137 @@
+.desktop-nav{
+    display: none;
+}
+
+header{
+    position: relative;
+    margin-bottom: 22%;
+}
+
+header nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    align-items: end;
+    padding:1rem;
+    background-color: #f8f6f3;
+    z-index: 6;
+}
+
+.header-logo {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.logo-menu{
+    max-width: 200px;
+}
+
+
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 15px;
+    height: 15px;
+}
+
+.burger-menu > *{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.extras-menu{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hero-wrapper{
+    position: relative;
+}
+.hero-video{
+    height: 50vh;
+}
+
+.hero-video video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 5vh;
+}
+
+.hero-body{
+    width: 100%;
+    padding: 0 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    color: white;
+}
+
+.hero-body h1{
+    margin: 1rem 0;
+}
+
+
+
+@media screen and (min-width: 960px) {
+
+    header {
+        margin-bottom: 8%;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .desktop-nav{
+        display: block;
+    }
+
+    .desktop-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-menu{
+        min-width: 550px;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .header-logo{
+        width: 100%;
+    }
+
+    .desktop-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 2rem;
+        gap: 2rem;
+    }
+
+    .desktop-menu i{
+        font-size: 26px;
+    }
+
+    .hero-video {
+        height: 63.5vh;
+    }
+
+}
